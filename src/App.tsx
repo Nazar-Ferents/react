@@ -1,6 +1,6 @@
 
 import './App.css'
-import type {coursesAndDurationArray} from "./coursesAndDuration/coursesAndDuration.ts";
+import {coursesAndDurationArray} from "./coursesAndDuration/coursesAndDuration.ts";
 import CourseComponent from "./MyComponents/course-component.tsx";
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
   return (
     <>
 
-      <p>Courses</p>
+      <h1>Courses</h1>
 
       {coursesAndDurationArray.map((course, i) => <CourseComponent key={i} course={course} />)}
 
