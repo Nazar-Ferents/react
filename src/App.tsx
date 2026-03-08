@@ -10,7 +10,11 @@ function App() {
 
       <h1>Courses</h1>
 
-      {coursesAndDurationArray.map((course, i) => <CourseComponent key={i} course={course} />)}
+        <div className="table">
+            {coursesAndDurationArray.map((course, i) =>
+                <CourseComponent key={i} course={course} />)}</div>
+
+
 
     </>
   )

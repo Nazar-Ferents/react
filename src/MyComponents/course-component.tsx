@@ -7,7 +7,7 @@ type CourseType = {
 
 const CourseComponent:FC<CourseType> = ({course}) => {
     return (
-        <div>
+        <div className='cell'>
             <h2>{course.title}</h2>
             <p>Month Duration:{course.monthDuration}</p>
 
