@@ -1,0 +1,22 @@
+
+
+.character {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.character img {
+
+    width: 200px;
+}
+
+
+
+.description {
+    display: flex;
+    text-align: left;
+    width: 80%;
+}
