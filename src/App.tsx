@@ -1,13 +1,15 @@
+import UsersComponent from "./components/users-component/users-component.tsx";
 
-import './App.css'
+const App = () => {
 
-function App() {
+  console.log("Hello App");
 
   return (
-    <>
+      <div>
+        <UsersComponent/>
 
-    </>
-  )
-}
+      </div>
+  );
+};
 
-export default App
+export default App;
