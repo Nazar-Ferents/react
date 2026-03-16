@@ -1,0 +1,15 @@
+
+
+
+
+.cell{
+    border: 3px solid black;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.cell h3{
+    text-align: center;
+}
