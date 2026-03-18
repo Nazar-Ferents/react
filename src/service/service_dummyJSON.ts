@@ -1,8 +1,10 @@
 import type {ITodos, ITodosGeneral} from "../modules/ITodos.ts";
 import type {IPosts, IPostsGeneral} from "../modules/IPosts.ts";
+import type {ICommentGeneral, IComments} from "../modules/IComments.ts";
 
 const endpointTodos = import.meta.env.VITE_BASE_URL + '/todos'
 const endpointPosts = import.meta.env.VITE_BASE_URL + '/posts'
+const endpointComments = import.meta.env.VITE_BASE_URL + '/comments'
 
 
  export const getTodos = async():Promise<ITodos[]> => {
@@ -21,5 +23,14 @@ export const getPosts = async():Promise<IPosts[]> => {
     const {posts}:IPostsGeneral = postsObject
     return posts
 
+}
+
+
+export const getComments = async():Promise<IComments[]> => {
+
+    const comments:ICommentGeneral = await fetch(endpointComments)
+        .then(res => res.json())
+
+    return comments.comments
 }
 
