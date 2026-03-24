@@ -1,9 +1,18 @@
+import {useParams} from "react-router-dom";
+import PostsComponent from "../components/Posts/PostsComponent/PostsComponent.tsx";
+
 
 const PostsPage = () => {
+
+    const {userId} = useParams()
+
+
     return (
         <div>
 
-            Posts Page content
+            {
+                userId && <PostsComponent userId={userId} />
+            }
 
         </div>
     );

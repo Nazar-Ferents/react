@@ -12,7 +12,10 @@ export const routes = createBrowserRouter([
         children: [
             {index:true,element:<HomePage/>},
             {
-                path:'users',element: <UsersPage/>
+                path:'users',element: <UsersPage/>,
+                children:[
+                    {path:'posts/:userId',element:<PostsPage/>}
+                ]
             },
             {
                 path:'users/details',element:<SingleUserDetailsPage/>
