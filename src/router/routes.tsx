@@ -15,22 +15,15 @@ export const routes = createBrowserRouter([
 
     {path:'',element:<Layout/>,
       children:[
-          {path:'users',element:<UsersPage/>,
-            children:[
-                {path:'/users/jsonplaceholder', element:<UsersPageJSON/>},
-                {path:'/users/dummyjson', element:<UsersPageDummy/>}
-            ]
-          },
-          {path:'posts',element:<PostsPage/>,
-             children:[
-                 {path:'/posts/jsonplaceholder',element:<PostsPageJSON/>},
-                 {path:'/posts/dummyjson',element:<PostsPageDummy/>}
-             ]},
-          {path:'comments',element:<CommentsPage/>,
-            children:[
-                {path:'/comments/jsonplaceholder',element:<CommentsPageJSON/>},
-                {path:'/comments/dummyjson',element:<CommentsPageDummy/>}
-            ]}
+          {path:'users',element:<UsersPage/>},
+          {path:'/users/jsonplaceholder', element:<UsersPageJSON/>},
+          {path:'/users/dummyjson', element:<UsersPageDummy/>},
+          {path:'posts',element:<PostsPage/>},
+          {path:'/posts/jsonplaceholder',element:<PostsPageJSON/>},
+          {path:'/posts/dummyjson',element:<PostsPageDummy/>},
+          {path:'comments',element:<CommentsPage/>},
+          {path:'/comments/jsonplaceholder',element:<CommentsPageJSON/>},
+          {path:'/comments/dummyjson',element:<CommentsPageDummy/>}
       ]
     }
 ])
