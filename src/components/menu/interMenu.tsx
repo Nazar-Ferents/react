@@ -5,8 +5,8 @@ const InterMenu = () => {
         <div>
 
             <ul>
-                <li><Link to={'/jsonplaceholder'}>JSON</Link></li>
-                <li><Link to={'/dummyjson'}>Dummy</Link></li>
+                <li><Link to={'jsonplaceholder'}>JSON</Link></li>
+                <li><Link to={'dummyjson'}>Dummy</Link></li>
             </ul>
 
         </div>
