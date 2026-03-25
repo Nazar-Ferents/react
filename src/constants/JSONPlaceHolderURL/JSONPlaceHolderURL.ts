@@ -10,9 +10,6 @@ export const urlsJSONPlaceHolder = {
     },
     comments:{
         allComments: baseUrlForJSONPlaceHolder + '/comments'
-    },
-    products:{
-        allProducts: baseUrlForJSONPlaceHolder + '/products'
     }
 
 }
