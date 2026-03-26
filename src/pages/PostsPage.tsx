@@ -1,4 +1,4 @@
-import PostsComponent from "../components/All PostComponents/PostsComponent/PostsComponent.tsx";
+import PostsComponent from "../components/AllPostComponents/PostsComponent/PostsComponent.tsx";
 
 const PostsPage = () => {
     return (
