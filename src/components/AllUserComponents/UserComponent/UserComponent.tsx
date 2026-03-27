@@ -9,7 +9,7 @@ const UserComponent:FC<UserComponentType> = ({user}) => {
 
     const navigate = useNavigate()
     const handleOnClick = () => {
-        navigate('carts/' + user.id)
+        navigate('/users/carts/' + user.id)
     }
 
     return (

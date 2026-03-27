@@ -7,10 +7,8 @@ import UsersPage from "../pages/UsersPage.tsx";
 export const routes = createBrowserRouter([
     {path:'',element:<Layout/>,
        children:[
-           {path:'users',element:<UsersPage/>,
-              children:[
-                  {path:'carts/:userId',element:<Carts/>}
-              ]}
+           {path:'users',element:<UsersPage/>},
+           {path:'/users/carts/:userId',element:<Carts/>}
 
 
        ]
