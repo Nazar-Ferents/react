@@ -1,12 +1,17 @@
 
 import './App.css'
+import PaginationComponent from "./components/pagination/PaginationComponent.tsx";
+import SomeComponent from "./components/some/SomeComponent.tsx";
 
-function App() {
+
+const App = () => {
 
   return (
-    <>
-
-    </>
+    <div>
+      hello
+          <PaginationComponent/>
+        <SomeComponent/>
+    </div>
   )
 }
 
