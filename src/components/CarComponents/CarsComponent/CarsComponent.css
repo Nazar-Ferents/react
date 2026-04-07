@@ -1,0 +1,11 @@
+
+
+
+.table{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap:20px;
+}

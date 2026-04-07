@@ -1,0 +1,16 @@
+
+
+.cell{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    border: 5px solid black;
+    padding: 20px;
+    background-color: #264360;
+    color: #93cff4;
+    height: 150px;
+    width: 200px;
+
+
+}

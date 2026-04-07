@@ -1,0 +1,29 @@
+
+
+.menu ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    text-align: center;
+    background-color: #264360;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+}
+
+.menu ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 150px;
+    padding-right: 150px;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Inter, sans-serif;
+    color: #379ee6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}

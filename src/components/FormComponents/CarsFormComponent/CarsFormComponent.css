@@ -1,0 +1,44 @@
+
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    border: 5px solid lightseagreen;
+    background-color: #264360;
+    width: 750px;
+    border-radius: 20px;
+    padding: 50px;
+}
+
+label{
+    display: block;
+    margin-top: 10px;
+}
+
+input{
+    padding: 30px;
+    width: 500px;
+    border-radius: 10px;
+    border: 1px solid #4e4a4a;
+    color: cornflowerblue;
+    font-family: Inter,sans-serif;
+}
+
+p{
+    color: #93cff4;
+
+}
+
+button{
+    padding: 10px;
+    width: 150px;
+    border-radius: 10px;
+    border: 1px solid #4e4a4a;
+    background-color: cornflowerblue;
+    text-align: center;
+    font-weight: bold;
+}
