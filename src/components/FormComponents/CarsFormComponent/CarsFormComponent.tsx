@@ -23,9 +23,7 @@ const CarsFormComponent = () => {
     return (
         <div>
             <form onSubmit={handleSubmit(customHandler)}>
-                <label>
-                    <input type="number" {...register("id")} placeholder={'id'}/>
-                </label>
+
                 <label>
                     <input type="text" {...register("brand")} placeholder={'brand'}/>
                     {errors.brand && <p>{errors.brand.message}</p>}

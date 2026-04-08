@@ -2,7 +2,7 @@ import * as Joi from "joi";
 
 
 export const carsValidator = Joi.object({
-    id: Joi.number().required(),
+
     brand: Joi.string().required().pattern(/^[a-zA-Zа-яА-яёЁіІїЇєЄҐґ]{1,20}$/).messages({
         "string.pattern.base":"the brand must contain from 1 to 20 characters "
     }),
