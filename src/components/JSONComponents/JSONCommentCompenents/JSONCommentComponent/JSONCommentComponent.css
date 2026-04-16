@@ -1,12 +1,21 @@
 
 
-.comment-card {
+.dark .comment-card {
     background: #35355a;
     color: #ddd;
     padding: 12px;
     margin: 8px 0 8px 40px;
     border-radius: 8px;
     border-left: 3px solid #7c4dff;
+}
+
+.light .comment-card {
+    background: #f3f4f6;
+    color: #374151;
+    padding: 12px;
+    margin: 8px 0 8px 40px;
+    border-radius: 8px;
+    border-left: 3px solid #6366f1;
 }
 .title {
     font-size: 18px;

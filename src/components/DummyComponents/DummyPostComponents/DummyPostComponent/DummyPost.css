@@ -1,6 +1,6 @@
 
 
-.post-card {
+.dark .post-card {
     background: #2a2a40;
     color: #fff;
     padding: 14px;
@@ -9,12 +9,28 @@
     border-left: 3px solid #4cafef;
 }
 
-.btn-secondary {
+.light .post-card {
+    background: #f9fafb;
+    color: #111827;
+    padding: 14px;
+    margin: 10px 0 10px 20px;
+    border-radius: 10px;
+    border-left: 3px solid #10b981;
+}
+
+.dark .btn-secondary {
     background: #7c4dff;
 }
 
-.btn-secondary:hover {
+.light .btn-secondary {
+    background: #6366f1;
+}
+
+.dark .btn-secondary:hover {
     background: #6536db;
+}
+.light .btn-secondary:hover {
+    background: #4f46e5;
 }
 
 .title {

@@ -1,4 +1,4 @@
-.post-card {
+.dark .post-card {
     background: #2a2a40;
     color: #fff;
     padding: 14px;
@@ -7,10 +7,51 @@
     border-left: 3px solid #4cafef;
 }
 
-.btn-secondary {
-background: #7c4dff;
+.light .post-card {
+    background: #f9fafb;
+    color: #111827;
+    padding: 14px;
+    margin: 10px 0 10px 20px;
+    border-radius: 10px;
+    border-left: 3px solid #10b981;
 }
 
-.btn-secondary:hover {
+.dark .btn-secondary {
+    background: #7c4dff;
+}
+
+.light .btn-secondary {
+    background: #6366f1;
+}
+
+.dark .btn-secondary:hover {
     background: #6536db;
+}
+.light .btn-secondary:hover {
+    background: #4f46e5;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+p{
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.fade-in {
+    animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

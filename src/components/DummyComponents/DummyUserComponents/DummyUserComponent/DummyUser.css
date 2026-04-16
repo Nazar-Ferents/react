@@ -1,6 +1,6 @@
 
 
-.user-card {
+.dark .user-card {
     background: #1e1e2f;
     color: #fff;
     padding: 16px;
@@ -9,12 +9,27 @@
     transition: 0.3s;
 }
 
-.user-card:hover {
+.light .user-card {
+    background: #ffffff;
+    color: #1a1a1a;
+    padding: 16px;
+    margin-bottom: 12px;
+    border-radius: 12px;
+    transition: 0.3s;
+    border: 1px solid #e5e7eb;
+}
+
+.dark .user-card:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 20px rgba(0,0,0,0.3);
 }
 
-.btn {
+.light .user-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.dark .btn {
     margin-top: 10px;
     padding: 6px 12px;
     border: none;
@@ -25,8 +40,23 @@
     transition: 0.2s;
 }
 
-.btn:hover {
+.light .btn {
+    margin-top: 10px;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    background: #10b981;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.dark .btn:hover {
     background: #3794db;
+}
+
+.light .btn:hover {
+    background: #059669;
 }
 .title {
     font-size: 18px;
@@ -37,4 +67,11 @@
 p{
     font-size: 14px;
     opacity: 0.9;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
