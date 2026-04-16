@@ -1,0 +1,16 @@
+.post-card {
+    background: #2a2a40;
+    color: #fff;
+    padding: 14px;
+    margin: 10px 0 10px 20px;
+    border-radius: 10px;
+    border-left: 3px solid #4cafef;
+}
+
+.btn-secondary {
+background: #7c4dff;
+}
+
+.btn-secondary:hover {
+    background: #6536db;
+}

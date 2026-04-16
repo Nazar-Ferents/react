@@ -2,6 +2,7 @@ import type {IUserDummy} from "../../../../modules/DummyModules/UsesrModulesDumm
 import {useEffect, useState} from "react";
 import {DummyService} from "../../../../services/DummyService/DummyService.tsx";
 import DummyUserComponent from "../DummyUserComponent/DummyUserComponent.tsx";
+import './DummyUsers.css'
 
 const DummyUsersComponent = () => {
 
@@ -16,7 +17,7 @@ const DummyUsersComponent = () => {
             });
     },[])
     return (
-        <div>
+        <div className='container'>
             {
                 users.map(user => (<DummyUserComponent user={user} key={user.id}/>))
             }

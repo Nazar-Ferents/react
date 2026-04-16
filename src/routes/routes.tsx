@@ -16,13 +16,17 @@ export const routes = createBrowserRouter([
         {index:true,element:<HomePage/>},
         {path:'usersDummy',element:<UsersDummyPage/>,
                 children:[
-                    {path:'postsByUserIdDummy/:userID',element:<PostsFromDummy/>},
-                    {path:'commentsByPostIdDummy/:postID',element:<CommentsFromDummy/>}
+                    {path:'postsByUserIdDummy/:userID',element:<PostsFromDummy/>,
+                        children:[
+                            {path:'commentsByPostIdDummy/:postID',element:<CommentsFromDummy/>}
+                        ]}
                 ]},
         {path:'usersJSON',element:<UsersJSONPage/>,
             children:[
-                {path:'postsByUserIdJSON/:userID',element:<PostsFromJSON/>},
-                {path:'commentsByPostIdJSON/:postID',element:<CommentsFromJSON/>}
+                {path:'postsByUserIdJSON/:userID',element:<PostsFromJSON/>,
+                children:[
+                    {path:'commentsByPostIdJSON/:postID',element:<CommentsFromJSON/>}
+                ]}
             ]}
     ]}
 ])

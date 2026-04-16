@@ -1,0 +1,40 @@
+
+
+.user-card {
+    background: #1e1e2f;
+    color: #fff;
+    padding: 16px;
+    margin-bottom: 12px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.user-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+.btn {
+    margin-top: 10px;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    background: #4cafef;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background: #3794db;
+}
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+p{
+    font-size: 14px;
+    opacity: 0.9;
+}

@@ -7,7 +7,7 @@ export const JSONUrls = {
     posts:{
         allPosts: baseURL + 'posts',
         postsByUserID: (id:number) => {
-            return baseURL + 'posts/' + id;
+            return baseURL + 'posts/' + id +'/comments';
         }
     },
     comments:{

@@ -2,6 +2,7 @@ import type {IUserJSON} from "../../../../modules/JSONModules/UserModulesJSON/IU
 import {useEffect, useState} from "react";
 import {JSONService} from "../../../../services/JSONService/JSONService.tsx";
 import JSONUserComponent from "../JSONUserComponent/JSONUserComponent.tsx";
+import './JSONUsersComponent.css'
 
 const JsonUsersComponent = () => {
 
@@ -13,7 +14,7 @@ const JsonUsersComponent = () => {
             .then(users => setUsers(users));
     },[])
     return (
-        <div>
+        <div className='container'>
             {
                 users.map((user) => (<JSONUserComponent user={user} key={user.id} />))
             }

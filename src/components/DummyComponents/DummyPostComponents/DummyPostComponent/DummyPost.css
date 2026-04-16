@@ -1,0 +1,43 @@
+
+
+.post-card {
+    background: #2a2a40;
+    color: #fff;
+    padding: 14px;
+    margin: 10px 0 10px 20px;
+    border-radius: 10px;
+    border-left: 3px solid #4cafef;
+}
+
+.btn-secondary {
+    background: #7c4dff;
+}
+
+.btn-secondary:hover {
+    background: #6536db;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+p{
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.fade-in {
+    animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
