@@ -1,17 +1,17 @@
 import type {FC} from "react";
 import type {IComment} from "../../../modules/CommentsModules/IComment.ts";
 
-type  CommentComponentType = {
-    comment:IComment
+type CommentComplexComponentType = {
+    comment: IComment
 }
-const CommentComponent:FC<CommentComponentType> = ({comment}) => {
+const CommentComplexComponent:FC<CommentComplexComponentType> = ({comment}) => {
     return (
         <div className='card comment-card'>
-            <h2>{comment.name}</h2>
+              <h4>{comment.name}</h4>
             <p>{comment.email}</p>
             <p>{comment.body}</p>
         </div>
     );
 };
 
-export default CommentComponent;
+export default CommentComplexComponent;

@@ -1,16 +1,19 @@
-import {useEffect, useState} from "react";
-import type {IComment} from "../../../modules/CommentsModules/IComment.ts";
-import {serviceJSON} from "../../../services/services.tsx";
+import {useEffect} from "react";
 import CommentComponent from "../CommentComponent/CommentComponent.tsx";
+import {useAppSelector} from "../../../redux/hooks/useAppSelector.tsx";
+import {useAppDispatch} from "../../../redux/hooks/useAppDispatch.tsx";
+import {loadComments} from "../../../redux/commentSlice/commentSlice.ts";
 
 const CommentsComponent = () => {
 
-    const [comments, setComments] = useState<IComment[]>([]);
+    const {comments} = useAppSelector(({commentSlice}) => commentSlice);
+const dispatch = useAppDispatch();
+
 
     useEffect(() => {
 
-        serviceJSON.getComments()
-            .then(res => setComments(res))
+         dispatch(loadComments());
+
     },[])
     return (
         <div>

@@ -6,7 +6,7 @@ type PostComponentType = {
 }
 const PostComponent:FC<PostComponentType> = ({post}) => {
     return (
-        <div>
+        <div className='card post-card'>
             <h2>{post.title}</h2>
             <p>{post.body}</p>
         </div>

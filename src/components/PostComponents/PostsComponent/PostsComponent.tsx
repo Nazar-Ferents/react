@@ -1,16 +1,17 @@
-import type {IPost} from "../../../modules/PostsModules/IPost.ts";
-import {useEffect, useState} from "react";
-import {serviceJSON} from "../../../services/services.tsx";
+import {useEffect} from "react";
 import PostComponent from "../PostComponent/PostComponent.tsx";
+import {useAppSelector} from "../../../redux/hooks/useAppSelector.tsx";
+import {useAppDispatch} from "../../../redux/hooks/useAppDispatch.tsx";
+import {loadPosts} from "../../../redux/postSlise/postSlice.ts";
 
 const PostsComponent = () => {
 
-    const [posts, setPosts] = useState<IPost[]>([])
+    const {posts} = useAppSelector(({postSlice}) => postSlice);
+    const dispatch = useAppDispatch();
 
     useEffect(() => {
 
-        serviceJSON.getPosts()
-            .then(value => setPosts(value))
+        dispatch(loadPosts());
     },[])
     return (
         <div>

@@ -1,28 +1,12 @@
-import {createAsyncThunk, createSlice, type PayloadAction} from "@reduxjs/toolkit";
+import { createSlice, type PayloadAction} from "@reduxjs/toolkit";
 import type {IUser} from "../../modules/UsersModules/IUser.ts";
-import {serviceJSON} from "../../services/services.tsx";
+import {loadUsers} from "../functions/funtctionsForUserSlice.ts";
 
 interface IUserSlice {
     users: IUser[];
 }
 
 const userInitialState:IUserSlice = {users:[]}
-
-const loadUsers = createAsyncThunk(
-    'userSlice/loadUser',
-    async (_,thunkAPI) => {
-        try{
-            const users = await serviceJSON.getUsers()
-
-            return thunkAPI.fulfillWithValue(users)
-        }
-        catch(error){
-            console.log(error)
-            return thunkAPI.rejectWithValue(error)
-        }
-    }
-)
-
 
 export const userSlice = createSlice({
     name: "userSlice",

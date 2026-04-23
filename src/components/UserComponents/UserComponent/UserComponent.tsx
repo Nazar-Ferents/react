@@ -7,7 +7,7 @@ type UserComponentType = {
 
 const UserComponent:FC<UserComponentType> = ({user}) => {
     return (
-        <div>
+        <div className='card user-card'>
             <h2>{user.name}</h2>
             <h4>Address:</h4>
             <p>City: {user.address.city}</p>
